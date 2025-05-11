@@ -9,3 +9,11 @@
 # poetry install - to install all the dependencies in your system 
 # poetry new - to create a new project
 
+
+## Fast API insallation:
+poetry add "fastapi[standard]"
+
+# Fast Api run command:
+
+
+

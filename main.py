@@ -72,21 +72,39 @@ data = [
     
 #   }
 
-@app.get("/login")
-def login():
+# @app.get("/login/{id}")
+# def login(id):
+#   try:
+#     return {
+#       "id": id,
+#       "data": [],
+#       "message": "Login Successful",
+#       "status": "success",
+#     }
+#     print("Login Successful", data)
+#   except Exception as e:
+#     return {
+#       # "data": [],
+#       "message": "Login Failed",
+#       "status": 500,
+#       "error": str(e)
+#     }
+    
+    
+@app.get("/login/{id}/{name}/{age}")
+def login(id, name, age):
   try:
     return {
-      
-      "data": [],
-      "message": "Login Successful",
-      "status": "success",
-    }
-    print("Login Successful", data)
-  except Exception as e:
-    return {
-      # "data": [],
-      "message": "Login Failed",
-      "status": 500,
-      "error": str(e)
-    }
+    "id" : id,
+    "name" : name,
+    "age" :age
+  }    
     
+  except Exception as e:
+   return {
+   "message": "Login Failed",
+   "status": 500,
+   "error": str(e)
+    
+  }
+     

@@ -4,8 +4,8 @@
 #Poetry Commends:
 # poetry init - to create a poetry.lock file for project setup 
 # poetry run python main.py - to run the project
-# poetry add package_name - to add a package
-# poetry remove package_name - to remove a package
+# poetry add package_name - to install dependencies in your project
+# poetry remove package_name - to remove a dependency from your project
 # poetry install - to install all the dependencies in your system 
 # poetry new - to create a new project
 

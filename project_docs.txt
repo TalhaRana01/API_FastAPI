@@ -12,8 +12,10 @@
 
 ## Fast API insallation:
 poetry add "fastapi[standard]"
+poetry add uvicorn 
 
 # Fast Api run command:
+poetry run uvicorn <file_name>:app --reload
 
 
 

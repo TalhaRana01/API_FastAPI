@@ -3,4 +3,5 @@
 
 #Poetry Commends:
 # poetry init - to create a poetry.lock file for project setup 
+# poetry run python main.py - to run the project
 # poetry add package_name - to add a package

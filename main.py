@@ -90,21 +90,21 @@ data = [
 #       "error": str(e)
 #     }
     
+    # dynamic parameters in route 
+# @app.get("/login/{id}/{name}/{age}")
+# def login(id, name, age):
+#   try:
+#     return {
+#     "id" : id,
+#     "name" : name,
+#     "age" :age
+#   }    
     
-@app.get("/login/{id}/{name}/{age}")
-def login(id, name, age):
-  try:
-    return {
-    "id" : id,
-    "name" : name,
-    "age" :age
-  }    
+#   except Exception as e:
+#    return {
+#    "message": "Login Failed",
+#    "status": 500,
+#    "error": str(e)
     
-  except Exception as e:
-   return {
-   "message": "Login Failed",
-   "status": 500,
-   "error": str(e)
-    
-  }
+#   }
      

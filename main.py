@@ -1,26 +1,33 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 app = FastAPI()
 
-
+class User(BaseModel):
+  id: int
+  name: str
+  age: int
+  email: str
+  profession: str
+  phone: str
+  
+  
 @app.post("/user")
-def create_user():
+def create_user(user: User):
+  print(user)
   try:
     
     return {
-      "id": 1,
-      "name": "Talha Rana",
-      "age": 25,
-      "email": "talharana@gmail.com",
-      "phone": "03001234567"
+      "message": "User Created Successfully",
+      "status": "success",
+      "data": user
     }
-    
     
   except Exception as e:
     return {
-      "message": "Login Failed",
-      "status": 500,
-      "error": str(e)
+      "message": str(e),
+      "status": "error",
+      "data": None
     }
     
     

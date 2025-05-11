@@ -2,6 +2,36 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+
+@app.post("/user")
+def create_user():
+  try:
+    
+    return {
+      "id": 1,
+      "name": "Talha Rana",
+      "age": 25,
+      "email": "talharana@gmail.com",
+      "phone": "03001234567"
+    }
+    
+    
+  except Exception as e:
+    return {
+      "message": "Login Failed",
+      "status": 500,
+      "error": str(e)
+    }
+    
+    
+# @app.get("/user/{id}")
+# def get_id(id: str):
+#   return {
+#     "id": id,
+#   }   
+
+
+ 
 # # Get Method
 # @app.get("/")
 # def get_method():
@@ -120,9 +150,11 @@ data = [
 #  }
      
      
-@app.get("/user")
-def users(q):
-     return {
-       "query": q
-       "name": 
-     }  
+# @app.get("/user")
+# def users(q):
+#      return {
+#        "query": q
+#        "name": 
+#      }  
+
+

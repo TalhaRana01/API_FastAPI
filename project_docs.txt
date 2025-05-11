@@ -1,1 +1,6 @@
 # install poetry in your system 
+# poetry --version for checking the version
+
+#Poetry Commends:
+# poetry init - to create a poetry.lock file for project setup 
+# poetry add package_name - to add a package

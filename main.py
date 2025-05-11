@@ -107,4 +107,22 @@ data = [
 #    "error": str(e)
     
 #   }
+
+
+# @app.get("/login/{id}/{name}/{age}")
+# def login(id, name, age):
+
+#  print(id, name, age)
+#  return {
+#    "id": id,
+#    "name": name,
+#    "age": age
+#  }
      
+     
+@app.get("/user")
+def users(q):
+     return {
+       "query": q
+       "name": 
+     }  

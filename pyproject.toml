@@ -1,7 +1,7 @@
 [project]
 name = "python-fast-api"
 version = "0.1.0"
-description = ""
+description = "create a fast api project with poetry"
 authors = [
     {name = "Talharana",email = "mtalharana093@gmail.com"}
 ]

@@ -6,3 +6,6 @@
 # poetry run python main.py - to run the project
 # poetry add package_name - to add a package
 # poetry remove package_name - to remove a package
+# poetry install - to install all the dependencies in your system 
+# poetry new - to create a new project
+
